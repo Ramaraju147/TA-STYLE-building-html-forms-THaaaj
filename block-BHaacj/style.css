@@ -1,0 +1,499 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  background-color: rgb(230, 230, 230);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* header */
+
+.header-section {
+  padding: 20px 0px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+header a {
+  color: black;
+  margin-left: 30px;
+  font-weight: 600;
+}
+
+.active {
+  color: rgb(105, 198, 186);
+}
+
+/* hero */
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("assets/banner.jpg") no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 60px 0px;
+}
+
+.hero-section h2 {
+  font-weight: 500;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+.hero-section img {
+  padding-bottom: 15px;
+}
+
+.hero-section p {
+  font-size: 28px;
+  padding-bottom: 20px;
+}
+
+.hero-section .round-btn {
+  background-color: rgb(105, 198, 186);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  color: white;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.hero-section form {
+  width: 65%;
+  margin: 40px auto;
+  background-color: white;
+  padding: 20px;
+}
+
+.hero-section form label {
+  font-size: 17px;
+  color: rgb(53, 57, 60);
+  font-weight: 600;
+  padding: 20px 0px;
+  display: block;
+}
+
+.hero-section input,
+select {
+  display: block;
+  border: none;
+  box-shadow: none;
+}
+
+.hero-section input {
+  padding: 0px 10px;
+}
+
+.hero-section select {
+  padding-right: 50px;
+}
+
+.block-btn {
+  padding: 15px 80px;
+  display: inline-block;
+  background-color: rgb(105, 198, 186);
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+.select {
+  padding: 0px 25px;
+}
+
+#rooms {
+  padding-right: 80px;
+}
+
+.submit {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+.hero-text {
+  width: 65%;
+  margin: 0 auto;
+  padding: 20px;
+  color: rgb(33, 37, 41);
+}
+
+.hero-text-container {
+  background-color: rgb(239, 239, 239);
+}
+
+.hero-text h2 {
+  font-size: 30px;
+  padding: 20px 0px;
+}
+
+.hero-text strong {
+  font-weight: 600;
+}
+
+.hero-text p {
+  padding-bottom: 20px;
+}
+
+.btn {
+  padding: 15px 30px;
+  display: inline-block;
+  border: none;
+  font-weight: 600;
+}
+
+.btn-primary {
+  color: white;
+  background-color: rgb(105, 198, 186);
+  margin-bottom: 30px;
+}
+
+.col-1-1 {
+  width: 50%;
+}
+
+.col-1-1 img {
+  flex: 0 1 50%;
+  width: 100%;
+  display: block;
+}
+
+.gallery {
+  background-color: white;
+  position: relative;
+}
+
+.col-1-2 {
+  width: 50%;
+  background-color: rgb(105, 198, 186);
+  padding: 30px;
+  position: relative;
+  right: 50px;
+  color: white;
+}
+
+.col-1-2 h3 {
+  font-size: 30px;
+  padding: 15px 0px;
+}
+
+.col-1-2 p {
+  padding-bottom: 15px;
+}
+
+.arrow-sym {
+  height: 40px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+}
+
+.btn-blue {
+  color: rgb(105, 198, 186);
+}
+
+.arrow {
+  position: absolute;
+  left: -95px;
+}
+
+.gallery-2 .col-1-2 {
+  width: 50%;
+  background-color: rgb(198, 105, 149);
+  padding: 30px;
+  position: relative;
+  left: 50px;
+  color: white;
+}
+
+.btn-red {
+  color: rgb(198, 105, 149);
+}
+
+.gallery-2 .arrow {
+  position: absolute;
+  left: 555px;
+}
+
+.map {
+  background-color: rgb(105, 198, 186);
+  color: white;
+}
+
+.continent {
+  padding: 30px 30px;
+  margin: 0;
+}
+
+.asia {
+  background-color: rgb(198, 105, 149);
+}
+
+.flex-stretch {
+  align-items: stretch;
+}
+
+.package {
+  padding: 30px 50px 0px 50px;
+  background-color: white;
+}
+
+.package button {
+  background-color: rgb(105, 198, 186);
+  color: white;
+  border: none;
+  padding: 30px 10px;
+  width: 20%;
+}
+
+.package-text {
+  align-self: center;
+  padding: 0px 30px;
+  width: 50%;
+}
+
+.package-text h4 {
+  font-size: 24px;
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+.package-text h6 {
+  color: rgb(198, 105, 149);
+  padding-bottom: 15px;
+  font-weight: 600;
+}
+
+.package-text p {
+  color: rgb(177, 176, 176);
+}
+
+.package .curve {
+  position: absolute;
+  right: 420px;
+}
+
+.package button .btn-text {
+  margin: 20px 0px;
+  display: inline-block;
+  font-size: 22px;
+}
+
+.package-section {
+  background-color: white;
+}
+
+iframe {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  z-index: 1;
+}
+
+.show {
+  margin-top: 30px;
+}
+
+.map-input {
+  position: relative;
+}
+
+.map-input form {
+  position: absolute;
+  right: 200px;
+  top: 50px;
+  padding: 30px;
+  background-color: white;
+}
+
+.map-input input,
+textarea {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.map-input input {
+  height: 40px;
+  background-color: rgb(245, 245, 245);
+  border: none;
+  padding: 10px;
+}
+
+.map-input textarea {
+  background-color: rgb(245, 245, 245);
+  border: none;
+  padding: 10px;
+}
+
+.flex-btn input {
+  justify-content: space-between;
+  width: 48%;
+}
+
+.map-input .btn {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+footer {
+  background-color: rgb(105, 198, 186);
+  color: white;
+  padding: 20px 0px;
+}
